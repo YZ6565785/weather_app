@@ -1,4 +1,5 @@
-# Preact Boilerplate / Starter Kit for a Weather App
+# Weather Mood App - by group 65
+# last modified date: ########
 
 ## Set-Up Guide
 - [Installation](#installation)
@@ -8,19 +9,32 @@
 
 **0. Before doing any of this, if you're using your own laptop/desktop, make sure you've got the latest versions of node and npm installed (npm v: 4.0.5 & node v: 7.4.0) :**
 
+# requires node and npm being installed
+# try following commands to check the version of the node and the npm respectively
 ```sh
 node -v
+```
+```sh
 npm -v
 ```
 
+
 ## Installation
 
-**1. Clone this repository :**
+**1. Choose a dictory :**
+
+sh
+cd "<your-directory-path>
+```
 
 ```sh
-git clone --depth 1 https://github.com/Juan-Alvarado/weatherapp-boilerplate.git weather-app
-cd weather-app
+copy the "weather-app" file in your dictory
 ```
+
+```sh
+cd weather-app  
+```
+
 
 **2. Make it your own :**
 
@@ -36,9 +50,9 @@ rm -rf .git && git init && npm init
 ```sh
 npm install
 ```
-
-## Development Workflow
-
+```sh
+npm install jquery-ui --save-dev
+```
 
 **4. Start a live-reload development server :**
 
@@ -55,7 +69,7 @@ npm run dev
 npm run build
 ```
 
-**6. Start local production server with [serve](https://github.com/zeit/serve):**
+**6. run the app: Start local production server with [serve](https://github.com/zeit/serve):**
 
 ```sh
 npm start
@@ -64,31 +78,29 @@ npm start
 > This simply serves up the contents of `./build`. Bear in mind, if you use this, the localhost port your server is running on will refresh, and you'll also need to restart it to see any changes you've made to the code in `src`.
 
 
-## Quick Boilerplate Overview
+## Overview of the resources used:
 
-- The initial run will display the iPhone version (iPhone 6/7 Plus screen size); however, if you modify the path on the url bar by adding "/ipad", you can view the tablet version (iPad Air screen size).
+- preact boilerplate from professor Juan
+- API data from openweathermap 
+- Weather icons from the flaticon website
+- music library linked from Apple Music
+- music icon from Apple
+- npm environment
+- node js environment
+- Javascript 
+- CSS & LESS
+- jquery
+- preact framework
+- JSON
 
-- The CSS pre-processor in use is Less. You don't have to worry about the syntax and just write in normal CSS as there are helper modules to assist you (located in `style/helpers`).
 
-- There are many weather APIs out there; this boilerplate uses OpenWeatherMap. Sign up, is free and you can find out more about it here : https://openweathermap.org/api 
-
-- Most importantly, have fun with it ! 👌
+👌
+best compatibility with 19:9 propertional screen of smartphones, and 736 (height) * 414 (width) pixels 
 
 
-## Extra Info
+References: 
 
-1. Handling URLS
-
-:information_source: You can use URL Routing as defined [here](http://git.io/preact-router).
-
-Pages are just regular components that get mounted when you navigate to a certain URL. Any URL parameters get passed to the component as `props`.
-
-Defining what component(s) to load for a given URL is easy and declarative. You can even mix-and-match URL parameters and normal props.
-
-```js
-<Router>
-  <A path="/" />
-  <B path="/b" id="42" />
-  <C path="/c/:id" />
-</Router>
-```
+preact: https://preactjs.com/
+react: https://reactjs.org
+tutorial: https://www.youtube.com/watch?v=DLX62G4lc44&t=1795s
+API: https://openweathermap.org/api

@@ -1,0 +1,120 @@
+@import '~style/helpers';
+
+::-webkit-scrollbar { 
+	display: none; 
+}
+
+/* container for each city */
+.cont {
+	display: flex;
+	flex-direction: row;
+	background-size: cover;
+	width: 414px;
+	height: 100px;
+	padding-bottom: 0px;
+	border-radius: 30px;
+	background-color: rgba(0,0,0,0.3);
+	margin-top: 10px;
+	
+}
+
+	
+
+/* (test) container for each city */
+.second {
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(0,0,0,0.6);
+	width: 414px;
+	height: 100px;
+	padding-bottom: 0px;
+	
+}
+
+/* left container for each city */
+.left {
+	display: flex;
+	text-align: left;
+	flex-direction: column;
+	padding-bottom: 5px;
+	width: 207px;
+	height: 100px;
+	margin-left: 20px;
+	
+}
+
+/* city name */
+.city {
+	padding-left: 5px;
+	font-size: 1.5em;
+	font-weight: 400;
+	width: inherit;
+}
+
+/* city time */
+.time {
+	padding-left: 5px;
+	font-size: 15px;
+	font-weight: 400;	
+	width: inherit;
+}
+
+/* right container for each city */
+.right {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	width: 207px;
+	height: 100px;
+}
+
+/* city temperature */
+.tem {
+	padding-right: 30px;
+	font-size: 3.0em;
+	font-weight: 300;	
+}
+.filled:after {
+	content: "°";
+	margin: 0 0 0 1rem;
+	font-size: 0.5em;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+}
+
+	
+
+
+
+.header {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.details {
+	flex: 4;
+}
+
+
+
+.conditions {
+	flex: 1;
+	font-size: 1em;
+}
+
+
+.temperature {
+	flex: 2;
+	margin-top: 0;
+	font-size: 4.8em;
+	font-weight: 300;
+	letter-spacing: -12px;
+}
+
+
+
+
+
